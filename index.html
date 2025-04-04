@@ -1,38 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blue Maxi Dress</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
+      padding: 20px;
+      background-color: #f8f8f8;
       display: flex;
       justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      background-color: #f8f8f8;
     }
 
     .container {
-      text-align: center;
+      width: 100%;
       max-width: 400px;
-      padding: 25px 20px;
-      background-color: #ffffff;
+      background-color: #fff;
+      padding: 20px;
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      text-align: center;
     }
 
     .center-img {
-      width: 300px;
+      width: 100%;
       height: auto;
-      display: block;
-      margin: 0 auto 20px auto;
+      max-height: 500px;
       border-radius: 8px;
+      margin-bottom: 20px;
+      object-fit: contain;
     }
-
 
     h2 {
       margin-bottom: 10px;
@@ -68,17 +71,29 @@
     .similar a:hover {
       text-decoration: underline;
     }
+
+    @media (max-width: 480px) {
+      .container {
+        padding: 15px;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+
+      .center-img {
+        max-height: 300px;
+      }
+    }
   </style>
 </head>
-
 <body>
   <div class="container">
-    <img src="https://i.pinimg.com/originals/e7/22/49/e72249e99973aa777c7b50e9342d928b.jpg" class="center-img"
-      alt="Blue Maxi Dress">
+    <img src="https://i.pinimg.com/originals/e7/22/49/e72249e99973aa777c7b50e9342d928b.jpg" class="center-img" alt="Blue Maxi Dress">
 
     <h2>Dress: Blue Maxi</h2>
     <p class="description">
-      This elegant blue maxi dress is perfect for summer evenings.
+      This elegant blue maxi dress is perfect for summer evenings. 
       It features a flowy silhouette, soft fabric, and a flattering fit for all body types.
     </p>
 
@@ -106,5 +121,4 @@
     </div>
   </div>
 </body>
-
 </html>
